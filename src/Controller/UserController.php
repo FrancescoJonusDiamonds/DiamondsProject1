@@ -116,9 +116,9 @@ class UserController extends FOSRestController
         ->getQuery()
         ->getSingleScalarResult();
 		
-	authKey = false;
+	$authKey = false;
 	
-	if ($userFound == 1) authKey = true;
+	if ($userFound == 1) $authKey = true;
 	
 	
     return $this->handleView($this->view($authKey));

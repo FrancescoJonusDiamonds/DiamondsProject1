@@ -13,9 +13,9 @@ class MainController extends AbstractController
      */
     public function index(): Response
     {
-       userController = new UserController();
+       $userController = new UserController();
 	   
-	   return $this->render('user/list.html.twig', ['data' => userController.getUserAction(),]);
+	   return $this->render('user/list.html.twig', ['data' => $userController.getUserAction(),]);
 	   
     }
 
