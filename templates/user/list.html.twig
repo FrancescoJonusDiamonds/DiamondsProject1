@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project NovitaDiamonds from Francesco Jonus</title>
+    </head>
+    <body>
+	
+	{{ usersNumber = data[0] }}
+	{{ users[] = data[1] }}
+	
+		<h1>Total user in database...</h1> {{ usersNumber }}
+	
+	
+        <ul id="navigation">
+        {% for users in navigation %}
+            <li>{{ users.id users.name users.surname users.password users.created users.updated }}</li>
+        {% endfor %}
+        </ul>
+
+        
+    </body>
+</html>
